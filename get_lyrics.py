@@ -38,4 +38,4 @@ def ask_inp(inputfromuser):
     print(get_lyrics(inputfromuser))
 
 if __name__=='__main__':
-    ask_inp()
+    ask_inp(inputfromuser)
