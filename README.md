@@ -1,4 +1,6 @@
-# Scrape lyrics of any song on google!
+# Scrape lyrics of any English song on google!
+
+<h1> Ver 2.0 will come with the ability to scrape Hindi and Bangla song lyrics </h1>
 
 <h3>On Terminal: </h3>
 
