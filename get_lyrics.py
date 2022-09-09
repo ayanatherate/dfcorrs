@@ -35,7 +35,7 @@ def get_lyrics(inp):
 
 def ask_inp(inputfromuser):
     #song_inf=str(input("Enter artist name and song name space separated: "))    
-    print(get_lyrics(inputfromuser))
+    return get_lyrics(inputfromuser)
 
 if __name__=='__main__':
-    ask_inp(inputfromuser)
+    ask_inp()
