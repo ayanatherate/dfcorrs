@@ -3,4 +3,4 @@
 ! git clone https://github.com/ayanatherate/lyricscraper.git
 
 from lyricscraper import get_lyrics <br>
-lyrics=get_lyrics.ask_inp('metallica enter sandman')
+lyrics=get_lyrics.ask_inp('metallica enter sandman') #please enter name of song along with artist name, space separated
