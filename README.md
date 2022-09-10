@@ -22,3 +22,11 @@ songs aren't as well documented as I had expected them to be and there is no suc
 have-it-all resource on the internet where I can blisfully direct my driver to, to <br>
 scrape any song possible. However,in my attempt to make this a full-proof project from <br>
 my side, I'll try my best to make this library more generalized as possible.
+
+<br
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
