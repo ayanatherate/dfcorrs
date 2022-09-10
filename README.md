@@ -1,4 +1,4 @@
-# Scrape lyrics of any English song on google!
+# Scrape lyrics of any English song on google! &#127926;
 
 
 <h3>On Terminal: </h3>
