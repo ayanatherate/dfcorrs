@@ -4,16 +4,18 @@
 <h3>On Terminal: </h3>
 
 ```
-git clone https://github.com/ayanatherate/lyricscraper.git<br>
-cd lyricscraper <br>
-pip install -r requirements.txt<br>
+git clone https://github.com/ayanatherate/lyricscraper.git
+cd lyricscraper 
+pip install -r requirements.txt
 ```
 
-<br><br>
+<br>
 <h3>Open any Python IDE/Notebook: </h3>
+```
 from lyricscraper import get_lyrics <br>
 lyrics=get_lyrics.ask_inp('metallica enter sandman') <br>
 #please enter name of song along with artist name, space separated
+```
 
 <h3> Future Scopes</h3>
 Future plans will oviously be to add multilingual song lyrics scraping ability.<br>
@@ -24,10 +26,4 @@ have-it-all resource on the internet where I can blisfully direct my driver to, 
 scrape any song possible. However,in my attempt to make this a full-proof project from <br>
 my side, I'll try my best to make this library more generalized as possible.
 
-<br
-Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
+
