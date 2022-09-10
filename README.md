@@ -11,9 +11,10 @@ pip install -r requirements.txt
 
 <br>
 <h3>Open any Python IDE/Notebook: </h3>
+
 ```
-from lyricscraper import get_lyrics <br>
-lyrics=get_lyrics.ask_inp('metallica enter sandman') <br>
+from lyricscraper import get_lyrics 
+lyrics=get_lyrics.ask_inp('metallica enter sandman') 
 #please enter name of song along with artist name, space separated
 ```
 
