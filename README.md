@@ -3,6 +3,7 @@
 
 <h3>On Terminal: </h3>
 ```
+<br>
 git clone https://github.com/ayanatherate/lyricscraper.git<br>
 cd lyricscraper <br>
 pip install -r requirements.txt<br>
