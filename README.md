@@ -1,7 +1,7 @@
 # &#127926; Scrape lyrics of any English song on google! &#127926;
 
 
-<h3>On Terminal: </h3>
+<h3>Run: </h3>
 
 ```
 git clone https://github.com/ayanatherate/lyricscraper.git
