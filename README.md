@@ -25,6 +25,6 @@ that would be directed to the web driver. Lyrics of Bangla songs or even Hindi <
 songs aren't as well documented as I had expected them to be and there is no such <br>
 have-it-all resource on the internet where I can blisfully direct my driver to, to <br>
 scrape any song possible. However,in my attempt to make this a full-proof project from <br>
-my side, I'll try my best to make this library more generalized as possible.
+my side, I'll try my best to make this library as generalized as possible.
 
 
