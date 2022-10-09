@@ -52,14 +52,14 @@ spearcorr.cal(data,plot_htmp=True)
 ```
 <img width="477" alt="image" src="https://user-images.githubusercontent.com/59755186/194780600-295fd3d9-6bdb-4fe7-9511-d204747f097e.png">
 
-<h3> For custom adding numerical columns for spearcorr.cal use: </h3>
+<h3> For custom adding numerical columns for spearcorr.cal comaprison use: </h3>
 
 ```
 spearcorr.cal(data, add_cols=['target'])
 # added column should be present in the dataset provided 
 
 ```
-<h3> For custom removing numerical(or redundant) columns for spearcorr.cal use: </h3>
+<h3> For custom removing numerical(or redundant) columns for spearcorr.cal comparison use: </h3>
 
 ```
 spearcorr.cal(data, rem_cols=['sepal_width'])
