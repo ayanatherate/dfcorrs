@@ -4,7 +4,7 @@
 <h3>Run: </h3>
 
 ```
-git clone https://github.com/ayanatherate/lyricscraper.git
+git clone https://github.com/ayanatherate/pdspearcorr.git
 cd pdspearcorr 
 pip install -r requirements.txt
 ```
