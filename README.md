@@ -31,6 +31,7 @@ spearcorr(data)['sepal_len']
 
 ```
 <img width="149" alt="image" src="https://user-images.githubusercontent.com/59755186/194780556-b233ce49-0788-4c54-bff7-739518ff94e0.png">
+
 ```
 spearcorr(data,plot_htmp=True)
 
