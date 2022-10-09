@@ -41,12 +41,6 @@ def spearcorr(data,add_cols=[],rem_cols=[],plot_htmp=False):
         
     return coef_scores_df
 
-import pandas as pd
-data=pd.read_csv(r"C:\Users\User\Desktop\DATASETS_ALL\Movies.csv")
-add_cols=[]
-rem_cols=[]
-print(spearcorr(data))
-    
 
                 
     
