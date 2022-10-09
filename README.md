@@ -30,8 +30,8 @@ from pdspearcorr import spearcorr
 from sklearn import datasets
 
 iris = datasets.load_iris()
-iris_df=pd.DataFrame(iris.data)
-iris_df.columns=['sepal_len', 'sepal_wid', 'petal_len', 'petal_wid']
+data=pd.DataFrame(iris.data)
+data.columns=['sepal_len', 'sepal_wid', 'petal_len', 'petal_wid']
 
 
 spearcorr.cal(data) #if not using notebooks, please use print()
