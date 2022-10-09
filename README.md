@@ -50,7 +50,8 @@ spearcorr.cal(data,plot_htmp=True)
 #Alternatively for plotting heatmap, can also use sns.heatmap(spearcorr.cal(data))
 
 ```
-<img width="477" alt="image" src="https://user-images.githubusercontent.com/59755186/194780600-295fd3d9-6bdb-4fe7-9511-d204747f097e.png">
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/59755186/194782414-f2341565-cd0e-4c12-81dc-9c2ab8cafc2d.png">
+
 
 <h3> For custom adding numerical columns for spearcorr.cal comaprison use: </h3>
 
