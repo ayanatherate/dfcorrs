@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-def spearcorr(data,add_cols=[],rem_cols=[],plot_htmp=False):
+def get(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     
     import pandas as pd
