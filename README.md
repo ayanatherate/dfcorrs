@@ -1,6 +1,8 @@
 
 <h2> Python package for easy spearman's rank correlation coef comparison for continuous features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) </h2> 
 
+<a href='https://stats.stackexchange.com/questions/8071/how-to-choose-between-pearson-and-spearman-correlation'> Why and When to choose Spearman over Pearson? </a> 
+
 <h3>Run: </h3>
 
 ```
