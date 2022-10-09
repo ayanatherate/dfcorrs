@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-def get(data,add_cols=[],rem_cols=[],plot_htmp=False):
+def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     
     import pandas as pd
