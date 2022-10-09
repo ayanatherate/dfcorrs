@@ -33,7 +33,9 @@ spearcorr(data)['sepal_len']
 <img width="149" alt="image" src="https://user-images.githubusercontent.com/59755186/194780556-b233ce49-0788-4c54-bff7-739518ff94e0.png">
 ```
 spearcorr(data,plot_htmp=True)
+
 #Alternatively for plotting heatmap, can also use sns.heatmap(spearcorr(data))
+
 ```
 <img width="477" alt="image" src="https://user-images.githubusercontent.com/59755186/194780600-295fd3d9-6bdb-4fe7-9511-d204747f097e.png">
 
