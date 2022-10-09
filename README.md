@@ -8,7 +8,10 @@ git clone https://github.com/ayanatherate/pdspearcorr.git
 cd pdspearcorr 
 pip install -r requirements.txt
 ```
+
 <h3> If using ipynb notebooks </h3>
+
+
 ```
 !git clone https://github.com/ayanatherate/pdspearcorr.git
 
