@@ -9,7 +9,7 @@ cd pdspearcorr
 pip install -r requirements.txt
 ```
 
-<h3> If using ipynb notebooks </h3>
+<h3> If using ipynb notebooks:</h3>
 
 
 ```
