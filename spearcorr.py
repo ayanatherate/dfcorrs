@@ -10,6 +10,9 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     import matplotlib.pyplot as plt
     from scipy.stats import spearmanr
     
+    import warnings
+    warnings.filterwarnings('ignore')
+    
     
     num_cols=list(data.corr().columns)
     num_cols=num_cols+add_cols
