@@ -44,7 +44,7 @@ cramersvcorr.cal(data)[#feature_name] #single out a categorical feature and obse
 
 
 
-<h1> At times, a categorical feature might be falsely interpreted by Pandas as a numerical feature by default (Example: 'City Code', 'Candidate ID') and vice-versa. Hence, to solve that problem : </h1>
+<h2> At times, a categorical feature might be falsely interpreted by Pandas as a numerical feature by default (Example: 'City Code', 'Candidate ID') and vice-versa. Hence, to solve that problem : </h2>
 
 <br>
 
