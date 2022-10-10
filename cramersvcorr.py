@@ -51,7 +51,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     coef_scores_df.index=cat_cols
     
     if plot_htmp==True:
-        fig = px.imshow(data_scores_df, text_auto=True)
+        fig = px.imshow(coef_scores_df, text_auto=True)
         fig.show()
         
     else:
