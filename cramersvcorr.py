@@ -4,8 +4,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     import pandas as pd
     import numpy as np
-    import seaborn as sns
-    import matplotlib.pyplot as plt
+    import plotly.express as px
     from scipy.stats import spearmanr
     
     import warnings
@@ -52,9 +51,8 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     coef_scores_df.index=cat_cols
     
     if plot_htmp==True:
-        plt.figure(figsize=(16,16))
-        sns.heatmap(coef_scores_df,annot=True)
-        plt.show()
+        fig = px.imshow(data_scores_df, text_auto=True)
+        fig.show()
         
     else:
         return coef_scores_df
