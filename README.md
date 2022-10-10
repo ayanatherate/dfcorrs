@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 from dfcorrs import cramersvcorr
 
-cramersvcorr.cal(data) #cramer's v corr comparison between all categorical features
+cramersvcorr.cal(data) #cramer's v corr comparison between all categorical features, returns a Pandas datframe similar to .corr()
 
 cramersvcorr.cal(data, plot_htmp=True) #plots heatmap using plotly
 
