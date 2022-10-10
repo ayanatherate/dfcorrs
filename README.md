@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 
 <br>
-<h3>Open any Notebook/IDE: </h3>
+<h3>Open any Python Notebook/IDE: </h3>
 
 <h3> Spearman's Correlation for Continuous features </h3>
 
