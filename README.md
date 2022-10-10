@@ -1,5 +1,7 @@
 
-# Python package for easy spearman's rank correlation coef comparison for continuous features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) 
+## Python package for easy spearman's rank correlation coef comparison for continuous features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) 
+
+<h4> Automatically detects continuous features. Also has custom feature addition/removal option. </h4>
 
 <a href='https://stats.stackexchange.com/questions/8071/how-to-choose-between-pearson-and-spearman-correlation'> Why and When to choose Spearman over Pearson? </a> 
 
@@ -53,14 +55,14 @@ spearcorr.cal(data,plot_htmp=True)
 <img width="481" alt="image" src="https://user-images.githubusercontent.com/59755186/194782414-f2341565-cd0e-4c12-81dc-9c2ab8cafc2d.png">
 
 
-<h3> For custom adding numerical columns for spearcorr.cal comaprison use: </h3>
+<h3> For custom adding numerical columns for spearcorr.cal comparison, use: </h3>
 
 ```
 spearcorr.cal(data, add_cols=['target'])
 # added column should be present in the dataset provided 
 
 ```
-<h3> For custom removing numerical(or redundant) columns for spearcorr.cal comparison use: </h3>
+<h3> For custom removing numerical(or redundant) columns for spearcorr.cal comparison, use: </h3>
 
 ```
 spearcorr.cal(data, rem_cols=['sepal_width'])
