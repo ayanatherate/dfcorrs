@@ -52,7 +52,7 @@ spearcorr.cal(data)['sepal_len']
 ```
 spearcorr.cal(data,plot_htmp=True)
 
-#Alternatively for plotting heatmap, can also use sns.heatmap(spearcorr.cal(data))
+
 
 ```
 <img width="530" alt="image" src="https://user-images.githubusercontent.com/59755186/194838931-b6a40317-0e80-473d-899e-15963face937.png">
@@ -67,7 +67,7 @@ from dfcorrs import cramersvcorr
 
 cramersvcorr.cal(data) #cramer's v corr comparison between all categorical features
 
-cramersvcorr.cal(data, plot_htmp=True) #plots heatmap using seaborn
+cramersvcorr.cal(data, plot_htmp=True) #plots heatmap using plotly
 
 cramersvcorr.cal(data)[#feature_name] #one-to-all comparison 
 
