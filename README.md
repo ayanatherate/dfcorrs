@@ -75,7 +75,7 @@ cramersvcorr.cal(data)[#feature_name] #one-to-all comparison
 <h3> For custom adding numerical columns for spearman corr comparison use: </h3>
 
 ```
-cramersvcorr.cal(data, add_cols=['sepal_diameter'])
+spearcorr.cal(data, add_cols=['sepal_diameter'])
 # added column should be present in the dataset provided 
 
 ```
@@ -85,7 +85,7 @@ cramersvcorr.cal(data, add_cols=['sepal_diameter'])
 <h3> For custom removing numerical(or redundant) columns for spearman corr comparison, use: </h3>
 
 ```
-cramersvcorr.cal(data, rem_cols=['sepal_width'])
+spearcorr.cal(data, rem_cols=['sepal_width'])
 
 ```
 <h3> For custom adding categorical columns for cramers corr comparison use: </h3>
