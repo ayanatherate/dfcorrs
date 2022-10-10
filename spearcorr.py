@@ -11,7 +11,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     from scipy.stats import spearmanr
     
     
-    num_cols=list(data._get_numeric_data().columns)
+    num_cols=list(data.corr().columns)
     num_cols=num_cols+add_cols
     
     if len(rem_cols)>0:
