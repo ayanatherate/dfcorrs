@@ -56,6 +56,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
         sns.heatmap(coef_scores_df,annot=True)
         plt.show()
         
-    return coef_scores_df
+    else:
+        return coef_scores_df
 
 
