@@ -35,9 +35,9 @@ from dfcorrs import cramersvcorr
 
 cramersvcorr.cal(data) #cramer's v corr comparison between all categorical features, returns a Pandas datframe similar to .corr()
 
-cramersvcorr.cal(data, plot_htmp=True) #plots heatmap using plotly
+cramersvcorr.cal(data, plot_htmp=True) #plots correlation heatmap using plotly
 
-cramersvcorr.cal(data)[#feature_name] #one-to-all comparison 
+cramersvcorr.cal(data)[#feature_name] #single out a categorical feature and observe correlations, returns Pandas Series
 
 ```
 
