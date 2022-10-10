@@ -8,6 +8,9 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     import matplotlib.pyplot as plt
     from scipy.stats import spearmanr
     
+    import warnings
+    warnings.filterwarnings('ignore')
+    
     
     num_cols=list(data.corr().columns)
     cat_cols=[i for i in data.columns if not i in num_cols]
@@ -45,8 +48,8 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     coef_scores=np.array(coef_scores).reshape(-reshape_val,reshape_val)
     
     coef_scores_df=pd.DataFrame(coef_scores)
-    coef_scores_df.columns=num_cols
-    coef_scores_df.index=num_cols
+    coef_scores_df.columns=cat_cols
+    coef_scores_df.index=cat_cols
     
     if plot_htmp==True:
         plt.figure(figsize=(16,7))
