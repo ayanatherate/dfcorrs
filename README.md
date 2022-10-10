@@ -53,9 +53,9 @@ spearcorr.cal(data)['sepal_len']
 spearcorr.cal(data,plot_htmp=True)
 
 #Alternatively for plotting heatmap, can also use sns.heatmap(spearcorr.cal(data))
-![download (29)](https://user-images.githubusercontent.com/59755186/194832376-0e121902-cb02-4daf-83fd-e672fca7ea69.png)
 
 ```
+![download (29)](https://user-images.githubusercontent.com/59755186/194832376-0e121902-cb02-4daf-83fd-e672fca7ea69.png)
 
 <h3> Cramer's v correlation for Categorical features </h3>
 
