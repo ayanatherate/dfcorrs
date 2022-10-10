@@ -1,5 +1,5 @@
 
-## Python package for easy spearman's rank correlation coef comparison for continuous features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) 
+## Python package for easy spearman's rank/Cramer's V correlation coef comparison for continuous & categorical features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) 
 
 <h4> Automatically detects continuous features. Also has custom feature addition/removal option. </h4>
 
@@ -66,15 +66,18 @@ dfcorrs.cramer(data, plot_htmp=True) #plots heatmap using seaborn
 
 dfcorrs.cramer(data)[#feature_name] #one-to-all comparison 
 
+```
+
 
 <h3> For custom adding numerical columns for spearman corr comparison use: </h3>
 
 ```
 dfcorrs.spear(data, add_cols=['target'])
 
+```
+
 # added column should be present in the dataset provided 
 
-```
 <h3> For custom removing numerical(or redundant) columns for spearman corr comparison, use: </h3>
 
 ```
@@ -86,9 +89,11 @@ spearcorr.cal(data, rem_cols=['sepal_width'])
 ```
 dfcorrs.spear(data, add_cols=['target'])
 
+```
+
 # added column should be present in the dataset provided 
 
-```
+
 <h3> For custom removing categorical(or redundant) columns for cramers corr comparison, use: </h3>
 
 ```
