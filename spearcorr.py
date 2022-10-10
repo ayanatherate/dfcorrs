@@ -38,7 +38,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     coef_scores_df.index=num_cols
     
     if plot_htmp==True:
-        plt.figure(figsize=(16,7))
+        plt.figure(figsize=(16,16))
         sns.heatmap(coef_scores_df,annot=True)
         plt.show()
     else:
