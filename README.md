@@ -54,7 +54,9 @@ cramersvcorr.cal(data)[#feature_name] #single out a categorical feature and obse
 
 ```
 cramersvcorr.cal(data, add_cols=['feature_name'])
-# added column should be present in the dataset provided 
+
+# added column should be present in the dataset provided
+# kindly use .astype('str') to force-convert falsely identified continuous columns (if any) before using.
 ```
 
 
