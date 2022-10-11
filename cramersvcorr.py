@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+
+
 def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     
@@ -13,6 +16,8 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     num_cols=list(data.corr().columns)
     cat_cols=[i for i in data.columns if not i in num_cols]
+    
+    
     cat_cols=cat_cols+add_cols
     
     if len(rem_cols)>0:
