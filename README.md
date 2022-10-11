@@ -32,6 +32,8 @@ pip install -r requirements.txt
 ```
 
 from dfcorrs import cramersvcorr
+import pandas as pd
+  
 data=pd.read_csv(r'../adatasetwithlotsofcategoricalandcontinuousfeatures.csv')
 
 cramersvcorr.cal(data) #cramer's v corr comparison between all categorical features, 
