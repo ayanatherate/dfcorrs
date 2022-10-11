@@ -8,8 +8,6 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     import pandas as pd
     import numpy as np
     import plotly.express as px
-    from scipy.stats import spearmanr
-    
     import warnings
     warnings.filterwarnings('ignore')
     
