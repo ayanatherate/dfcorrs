@@ -1,5 +1,5 @@
 
-<h2>Python package for implementing Cramer's V correlation coef comparison between categorical features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) </h2>
+<h3>Python package for implementing Cramer's V correlation coef comparison between categorical features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) </h3>
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
 
@@ -50,7 +50,7 @@ cramersvcorr.cal(data)[#feature_name] #single out a categorical feature and obse
 
 
 
-<h2> At times, a categorical feature might be falsely interpreted by Pandas as a continuous feature by default (Example: 'City Code', 'Candidate ID') and vice-versa. Hence, to solve that problem : </h2>
+<h3> At times, a categorical feature might be falsely interpreted by Pandas as a continuous feature by default (Example: 'City Code', 'Candidate ID') and vice-versa. Hence, to solve that problem : </h3>
 
 <br>
 
