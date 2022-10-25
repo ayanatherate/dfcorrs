@@ -3,7 +3,7 @@
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
 
-<h4> Inspiration: 'The Search for Categorical Correlation'- post in Towards Data Science by <a href='https://github.com/shakedzy'> Shakedzy</a>. Link to the post: <a href='https://towardsdatascience.com/the-search-for-categorical-correlation-a1cf7f1888c9'> Click Here </a></h4>
+<h4> Inspiration: <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Wiki page Cramer's v </a>
 
 <h3>Run: </h3>
 
