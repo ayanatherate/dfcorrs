@@ -3,7 +3,7 @@
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
 
-<h4> Inspiration: <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Wiki page Cramer's v </a>
+<h4> Inspiration: <a href="https://en.wikipedia.org/wiki/Cram%C3%A9r%27s_V">Wikipedia page Cramer's v </a>
 
 <h3>Run: </h3>
 
