@@ -1,5 +1,5 @@
 
-<h3>Python package for implementing Cramer's V correlation coef comparison between categorical features in Pandas DataFrames (similar to data.corr() for default pearson's coef in Pandas) </h3>
+<h3>Implement pairwise categorical correlations (with heatmap) of all columns in Pandas Dataframes in just one line of code.</h3>
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
 
