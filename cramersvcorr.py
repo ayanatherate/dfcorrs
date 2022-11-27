@@ -19,6 +19,19 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
         total_count = column.shape[0]
         if unique_count / total_count < 0.05:
             cat_cols.append(name)
+
+    for i in add_cols:
+        if i not in data.columns:
+            print('Added Columns not found in Originl Dataframe')
+    
+    cat_cols=cat_cols+add_cols
+    
+    if len(rem_cols)>0:
+        for i in rem_cols:
+            if i in cat_cols:
+                cat_cols.remove(i)
+            else:
+                pass
                 
     def cramers_v(x, y):
         
