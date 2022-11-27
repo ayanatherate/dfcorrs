@@ -13,13 +13,10 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     warnings.filterwarnings('ignore')
     
     
-    cat_cols=[]
+    num_cols=data.corr().columns
+    cat_cols=[cols for cols in data.columns if not cols in num_cols]
 
-    for name, column in data.iteritems():
-        unique_count = column.unique().shape[0]
-        total_count = column.shape[0]
-        if unique_count / total_count < 0.05:
-            cat_cols.append(name)
+    
 
     for i in add_cols:
         if i not in data.columns:
