@@ -8,6 +8,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     import pandas as pd
     import numpy as np
     import plotly.express as px
+    import scipy.stats as ss
     import warnings
     warnings.filterwarnings('ignore')
     
@@ -34,9 +35,6 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
                 pass
                 
     def cramers_v(x, y):
-        
-        import scipy.stats as ss
-        
         confusion_matrix = pd.crosstab(x,y)
         chi2 = ss.chi2_contingency(confusion_matrix)[0]
         n = confusion_matrix.sum().sum()
