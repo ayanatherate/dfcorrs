@@ -14,7 +14,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     cat_cols=[]
 
-    for name, column in df.iteritems():
+    for name, column in data.iteritems():
         unique_count = column.unique().shape[0]
         total_count = column.shape[0]
         if unique_count / total_count < 0.05:
