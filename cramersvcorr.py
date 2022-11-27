@@ -21,8 +21,10 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     for i in add_cols:
         if i not in data.columns:
             print('Added Columns not found in Originl Dataframe')
+        else:
+            cat_cols.append(i)
     
-    cat_cols=cat_cols+add_cols
+    
     
     if len(rem_cols)>0:
         for i in rem_cols:
