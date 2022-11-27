@@ -12,16 +12,13 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     warnings.filterwarnings('ignore')
     
     
-    num_cols=list(data.corr().columns)
-    cat_cols=[i for i in data.columns if not i in num_cols]
-    
-    
-    cat_cols=cat_cols+add_cols
-    
-    if len(rem_cols)>0:
-        for i in rem_cols:
-            if i in cat_cols:
-                cat_cols.remove(i)
+    cat_cols=[]
+
+    for name, column in df.iteritems():
+        unique_count = column.unique().shape[0]
+        total_count = column.shape[0]
+        if unique_count / total_count < 0.05:
+            cat_cols.append(name)
                 
     def cramers_v(x, y):
         
