@@ -20,7 +20,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
 
     for i in add_cols:
         if i not in data.columns:
-            print('Added Columns not found in Originl Dataframe')
+            print('Added Columns not found in Original Dataframe')
         else:
             cat_cols.append(i)
     
