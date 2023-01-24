@@ -24,27 +24,24 @@ def cramers_v(x, y):
 
 def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
+    coef_scores=[]
+    
     num_cols=data.corr().columns
     cat_cols=[cols for cols in data.columns if not cols in num_cols]
-
-    
 
     for i in add_cols:
         if i not in data.columns:
             print('Added Columns not found in Original Dataframe')
         else:
             cat_cols.append(i)
-    
-    
-    
+  
     if len(rem_cols)>0:
         for i in rem_cols:
             if i in cat_cols:
                 cat_cols.remove(i)
             else:
                 pass
-                
-                
+            
     coef_scores=[]
 
     for i in cat_cols:
@@ -61,8 +58,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     if plot_htmp==True:
         fig = px.imshow(coef_scores_df, text_auto=True)
-        fig.show()
-        
+        fig.show()   
     else:
         return coef_scores_df
 
