@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-
+from cramer_func import cramers_v
 def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     
     
@@ -9,7 +9,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     import numpy as np
     import plotly.express as px
     import scipy.stats as ss
-    from cramer_func import cramers_v
+    
     import warnings
     warnings.filterwarnings('ignore')
     
