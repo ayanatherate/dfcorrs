@@ -9,7 +9,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
     import numpy as np
     import plotly.express as px
     import scipy.stats as ss
-    from cramer_func import cramers_v
+    import cramer_func
     import warnings
     warnings.filterwarnings('ignore')
     
@@ -39,7 +39,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
 
     for i in cat_cols:
         for j in cat_cols:
-            coef= cramers_v(data[i], data[j])
+            coef= cramer_func.cramers_v(data[i], data[j])
             coef_scores.append(coef)
             
     reshape_val=int(np.sqrt(len(coef_scores)))
