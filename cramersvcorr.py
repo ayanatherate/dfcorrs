@@ -46,7 +46,7 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
 
     for i in cat_cols:
         for j in cat_cols:
-            coef= cramer_func.cramers_v(data[i], data[j])
+            coef= cramers_v(data[i], data[j])
             coef_scores.append(coef)
             
     reshape_val=int(np.sqrt(len(coef_scores)))
