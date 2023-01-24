@@ -1,18 +1,28 @@
 # -*- coding: utf-8 -*-
+import pandas as pd
+import numpy as np
+import plotly.express as px
+import scipy.stats as ss
+    
+import warnings
+warnings.filterwarnings('ignore')
 
 
-from cramer_func import cramers_v
+def cramers_v(x, y):
+    confusion_matrix = pd.crosstab(x,y)
+    chi2 = ss.chi2_contingency(confusion_matrix)[0]
+    n = confusion_matrix.sum().sum()
+    phi2 = chi2/n
+    r,k = confusion_matrix.shape
+    phi2corr = max(0, phi2-((k-1)*(r-1))/(n-1))
+    rcorr = r-((r-1)**2)/(n-1)
+    kcorr = k-((k-1)**2)/(n-1)
+        
+    return np.sqrt(phi2corr/min((kcorr-1),(rcorr-1)))
+
+
+
 def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
-    
-    
-    import pandas as pd
-    import numpy as np
-    import plotly.express as px
-    import scipy.stats as ss
-    
-    import warnings
-    warnings.filterwarnings('ignore')
-    
     
     num_cols=data.corr().columns
     cat_cols=[cols for cols in data.columns if not cols in num_cols]
