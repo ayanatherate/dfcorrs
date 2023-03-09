@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import scipy.stats as ss
-from cramers_main import cramers_v
+
     
 import warnings
 warnings.filterwarnings('ignore')
