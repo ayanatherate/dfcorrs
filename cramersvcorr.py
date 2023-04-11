@@ -60,5 +60,8 @@ def cal(data,add_cols=[],rem_cols=[],plot_htmp=False):
         fig.show()   
     else:
         return coef_scores_df
+    
+ if '__name__'=='__main__':
+    cal(data,add_cols=[],rem_cols=[],plot_htmp=False)
 
 
