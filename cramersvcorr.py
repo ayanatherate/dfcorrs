@@ -9,7 +9,7 @@ warnings.filterwarnings('ignore')
 class Cramers:
     
     def __init__(self):
-        self.coef_scores=np.array()
+        self.coef_scores=np.array([])
     
     def detect_categorical_columns(self, df, threshold_unique=0.05, threshold_distribution=0.95):
         """ auto-detects categorical columns as per thresholds"""
