@@ -45,22 +45,12 @@ class Cramers:
         
         categorical_columns=self.detect_categorical_columns(data, threshold_unique=0.05, threshold_distribution=0.95)
         
-        if len(add_cols)>0:
-            try:
-                for col in add_cols:
-                    if col in data.columns:
-                        data[col]=data[col].astype('object')
-                        categorical_columns.append(col)
-            except:
-                raise ValueError(f'Unable to convert column type {col} to Object')
-                
-                
-        if len(rem_cols)>0:
-            for col in rem_cols:
-                if col in data.columns:
-                    categorical_columns.remove(col)
-                else:
-                    raise KeyError(f'Unable to locate column {col} in the dataframe')
+        for col in add_cols:
+            if col not in data.columns:
+                raise KeyError(f'Unable to locate column {col} in the dataframe')
+            data[col] = data[col].astype('object')
+            categorical_columns.append(col)
+        categorical_columns = list(set(categorical_columns) - set(rem_cols))
                 
         for i in categorical_columns:
             for j in categorical_columns:
