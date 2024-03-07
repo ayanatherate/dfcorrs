@@ -11,6 +11,8 @@ class Cramers:
     def __init__(self):
         self.coef_scores=list()
         
+    
+    
     def detect_categorical_columns(self, df, threshold_unique=0.05, threshold_distribution=0.95):
         """ auto-detects categorical columns as per thresholds"""
         categorical_columns = []
@@ -65,7 +67,7 @@ class Cramers:
                 
         for i in categorical_columns:
             for j in categorical_columns:
-                coef= self.cramers_v(data[i].fillna('Missing'), data[j].fillna('Missing'))
+                coef= self.cramers_v(data[i], data[j])
                 self.coef_scores.append(coef)
             
         reshape_val=int(np.sqrt(len(self.coef_scores)))
