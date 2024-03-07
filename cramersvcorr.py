@@ -9,7 +9,8 @@ warnings.filterwarnings('ignore')
 class Cramers:
     
     def __init__(self):
-        self.coef_scores=np.array([])
+        self.coef_scores=[]
+        self.coef_array=np.array([])
     
     def detect_categorical_columns(self, df, threshold_unique=0.05, threshold_distribution=0.95):
         """ auto-detects categorical columns as per thresholds"""
@@ -63,9 +64,9 @@ class Cramers:
                 self.coef_scores+=coef
             
         reshape_val=int(np.sqrt(len(self.coef_scores)))
-        self.coef_scores=np.array(self.coef_scores).reshape(-reshape_val,reshape_val)
+        self.coef_array=np.array(self.coef_scores).reshape(-reshape_val,reshape_val)
         
-        coef_scores_df=pd.DataFrame(self.coef_scores)
+        coef_scores_df=pd.DataFrame(self.coef_array)
         coef_scores_df.fillna(0, inplace=True)
         coef_scores_df.columns=categorical_columns
         coef_scores_df.index=categorical_columns
