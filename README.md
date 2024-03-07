@@ -3,10 +3,9 @@
 
 [![Test in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CbxvL9EytlqXzRlsMKPno6DVECDiVAUC#scrollTo=xi26-mMGdtNG)
 
-<img width="820" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/152703e7-984a-46cb-8a60-3e0cbaa9e1ed">
-<img width="410" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/e2c38839-7e9d-4b6f-b4d3-216045ef463d">
-<img width="410" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/fe218bc3-499c-40c3-8e84-d27d715ec6a0">
-
+![newplot (45)](https://github.com/ayanatherate/dfcorrs/assets/59755186/7978dd42-266f-4211-bf52-8c3f11c971e7)
+<img width="911" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/5e8752b1-e967-4e57-8a99-ce30c1197f1c">
+<img width="906" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/dd10b7fa-90da-4b71-be6c-37bc52796d50">
 
 
 
