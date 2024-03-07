@@ -1,5 +1,7 @@
 
 <h3>Implement pairwise categorical correlations (with heatmap) of all columns in Pandas Dataframes in just one line of code.</h3>
+<img width="612" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/152703e7-984a-46cb-8a60-3e0cbaa9e1ed">
+
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
 
@@ -33,18 +35,18 @@ pip install -r requirements.txt
   
   
 ```
-
-from dfcorrs import cramersvcorr
+from dfcorrs.cramersvcorr import Cramers
 import pandas as pd
-  
+
+cramers=Cramers()
 data=pd.read_csv(r'../adatasetwithlotsofcategoricalandcontinuousfeatures.csv')
 
-cramersvcorr.cal(data) #cramer's v corr comparison between all categorical features, 
+cramers.corr(data) #cramer's v corr comparison between all categorical features, 
                        #returns a Pandas datframe similar to .corr()
 
-cramersvcorr.cal(data, plot_htmp=True) #plots correlation heatmap using plotly
+cramers.corr(data, plot_htmp=True) #plots correlation heatmap using plotly
 
-cramersvcorr.cal(data)[#feature_name] #single out a categorical feature and observe correlations, returns Pandas Series
+cramers.corr(data)[#feature_name] #single out a categorical feature and observe correlations, returns Pandas Series
 
 ```
 
@@ -59,7 +61,7 @@ cramersvcorr.cal(data)[#feature_name] #single out a categorical feature and obse
 <h3> For custom adding categorical columns for cramers corr comparison use: </h3>
 
 ```
-cramersvcorr.cal(data, add_cols=['feature_name'])
+cramers.corr(data, add_cols=['feature_name'])
 
 # added column should be present in the dataset provided
 # kindly use .astype('str') to force-convert falsely identified continuous columns (if any) before using.
@@ -71,7 +73,7 @@ cramersvcorr.cal(data, add_cols=['feature_name'])
 <h3> For custom removing categorical(or redundant) columns for cramers corr comparison, use: </h3>
 
 ```
-cramersvcorr.cal(data, rem_cols=['feature_name'])
+cramers.corr(data, rem_cols=['feature_name'])
 
 ```
 
