@@ -60,7 +60,7 @@ class Cramers:
                 col2=data[j].fillna(data[j].mode()[0]).values
                 
                 coef= self.cramers_v(col1, col2)
-                self.coef_scores.append(coef)
+                list(self.coef_scores).append(coef)
             
         reshape_val=int(np.sqrt(len(self.coef_scores)))
         self.coef_scores=np.array(self.coef_scores).reshape(-reshape_val,reshape_val)
