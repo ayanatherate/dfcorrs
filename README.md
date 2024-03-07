@@ -1,6 +1,10 @@
 
 <h3>Implement pairwise categorical correlations (with heatmap) of all columns in Pandas Dataframes in just one line of code.</h3>
 <img width="612" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/152703e7-984a-46cb-8a60-3e0cbaa9e1ed">
+<img width="410" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/e2c38839-7e9d-4b6f-b4d3-216045ef463d">
+<img width="365" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/fe218bc3-499c-40c3-8e84-d27d715ec6a0">
+
+
 
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
