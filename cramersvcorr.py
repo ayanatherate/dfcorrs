@@ -9,8 +9,7 @@ warnings.filterwarnings('ignore')
 class Cramers:
     
     def __init__(self):
-        self.coef_scores=[]
-        self.coef_array=np.array([])
+        pass
     
     def detect_categorical_columns(self, df, threshold_unique=0.05, threshold_distribution=0.95):
         """ auto-detects categorical columns as per thresholds"""
@@ -43,6 +42,7 @@ class Cramers:
     def corr(self,data,add_cols=[],rem_cols=[],plot_htmp=False):
         
         """ main function to calculate cramers correlation given the dataframe"""
+        coef_scores=[]
         
         categorical_columns=self.detect_categorical_columns(data, threshold_unique=0.05, threshold_distribution=0.95)
         
@@ -61,12 +61,12 @@ class Cramers:
                 col2=data[j].fillna(data[j].mode()[0]).values
                 
                 coef= self.cramers_v(col1, col2)
-                self.coef_scores+=coef
+                coef_scores.append(coef)
             
-        reshape_val=int(np.sqrt(len(self.coef_scores)))
-        self.coef_array=np.array(self.coef_scores).reshape(-reshape_val,reshape_val)
+        reshape_val=int(np.sqrt(len(coef_scores)))
+        coef_scores=np.array(coef_scores).reshape(-reshape_val,reshape_val)
         
-        coef_scores_df=pd.DataFrame(self.coef_array)
+        coef_scores_df=pd.DataFrame(coef_scores)
         coef_scores_df.fillna(0, inplace=True)
         coef_scores_df.columns=categorical_columns
         coef_scores_df.index=categorical_columns
