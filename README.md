@@ -25,7 +25,7 @@ pip install -r requirements.txt
 <h3> If using ipynb notebooks:</h3>
 
 
-```
+```python
 !git clone https://github.com/ayanatherate/dfcorrs.git
 
 ```
@@ -67,7 +67,7 @@ cramers.corr(data)[#feature_name] #single out a categorical feature and observe 
 
 <h3> For custom adding categorical columns for cramers corr comparison use: </h3>
 
-```
+```python
 cramers.corr(data, add_cols=['feature_name'])
 
 # added column should be present in the dataset provided
@@ -79,10 +79,12 @@ cramers.corr(data, add_cols=['feature_name'])
 
 <h3> For custom removing categorical(or redundant) columns for cramers corr comparison, use: </h3>
 
-```
+```python
 cramers.corr(data, rem_cols=['feature_name'])
 
 ```
+
+
 
 
 
