@@ -41,21 +41,21 @@ pip install -r requirements.txt
 <h4> Would take some time to compute, depending on number of features/records. </h4>
   
   
-` ` `
- from dfcorrs.cramersvcorr import Cramers
- import pandas as pd
+```
+from dfcorrs.cramersvcorr import Cramers
+import pandas as pd
 
- cramers=Cramers()
- data=pd.read_csv(r'../adatasetwithlotsofcategoricalandcontinuousfeatures.csv')
+cramers=Cramers()
+data=pd.read_csv(r'../adatasetwithlotsofcategoricalandcontinuousfeatures.csv')
 
- cramers.corr(data) #cramer's v corr comparison between all categorical features, 
+cramers.corr(data) #cramer's v corr comparison between all categorical features, 
                        #returns a Pandas datframe similar to .corr()
 
- cramers.corr(data, plot_htmp=True) #plots correlation heatmap using plotly
+cramers.corr(data, plot_htmp=True) #plots correlation heatmap using plotly
 
- cramers.corr(data)[#feature_name] #single out a categorical feature and observe correlations, returns Pandas Series
+cramers.corr(data)[#feature_name] #single out a categorical feature and observe correlations, returns Pandas Series
 
-` ` `
+```
 
 
 
