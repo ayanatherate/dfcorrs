@@ -41,7 +41,7 @@ pip install -r requirements.txt
 <h4> Would take some time to compute, depending on number of features/records. </h4>
   
   
-```
+```python
 from dfcorrs.cramersvcorr import Cramers
 import pandas as pd
 
