@@ -16,7 +16,7 @@
 
 <h3>Run: </h3>
 
-```
+```python
 git clone https://github.com/ayanatherate/dfcorrs.git
 cd dfcorrs 
 pip install -r requirements.txt
