@@ -59,7 +59,7 @@ cramers.corr(data)[#feature_name] #single out a categorical feature and observe 
 
 
 
-<h3> At times, a categorical feature might be falsely interpreted by Pandas as a continuous feature by default (Example: 'City Code', 'Candidate ID') and vice-versa. Hence, to solve that problem : </h3>
+<h3> At times, a sparse/categorical feature might be falsely interpreted by Pandas as a continuous feature by default (Example: 'City Code', 'Candidate ID') and vice-versa. Hence, to solve that problem : </h3>
 
 <br>
 
