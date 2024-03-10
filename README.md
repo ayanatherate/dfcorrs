@@ -3,6 +3,10 @@
 
 [![Test in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CbxvL9EytlqXzRlsMKPno6DVECDiVAUC#scrollTo=xi26-mMGdtNG)
 
+<img width="890" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/d781b4ba-f9f5-464c-b703-f611ae83906b">
+<img width="911" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/5e8752b1-e967-4e57-8a99-ce30c1197f1c">
+<img width="906" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/dd10b7fa-90da-4b71-be6c-37bc52796d50">
+
 
 <h4> Automatically detects categorical features and ignores numerical features. Also has custom feature addition/removal option. 
 
@@ -103,14 +107,5 @@ cramers.cramers_v(data['feature_name1'], data['feature_name2'])
 
 cramers.cramers_v([i for i in some classes1], [i for i in some classes2]) #say, we have two python arrays/lists instead
 ```
-
-<img width="890" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/d781b4ba-f9f5-464c-b703-f611ae83906b">
-<img width="911" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/5e8752b1-e967-4e57-8a99-ce30c1197f1c">
-<img width="906" alt="image" src="https://github.com/ayanatherate/dfcorrs/assets/59755186/dd10b7fa-90da-4b71-be6c-37bc52796d50">
-
-
-
-
-
 
 
