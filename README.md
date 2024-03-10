@@ -48,23 +48,26 @@ import pandas as pd
 cramers=Cramers()
 data=pd.read_csv(r'../adatasetwithlotsofcategoricalandcontinuousfeatures.csv')
 
+
+cramers.corr(data)
+
 """
  cramer's v corr comparison between all categorical features
  returns a Pandas datframe similar to .corr()
-
 """
-cramers.corr(data)
+
+
+cramers.corr(data, plot_htmp=True)
 
 """
 plots correlaton heatmap using plotly
 """
 
-cramers.corr(data, plot_htmp=True)
+cramers.corr(data)[#feature_name]
 
 """
 single out a categorical feature and observe correlations, returns Pandas Series
 """
-cramers.corr(data)[#feature_name] 
 ```
 
 
