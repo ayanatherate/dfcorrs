@@ -48,13 +48,23 @@ import pandas as pd
 cramers=Cramers()
 data=pd.read_csv(r'../adatasetwithlotsofcategoricalandcontinuousfeatures.csv')
 
-cramers.corr(data) #cramer's v corr comparison between all categorical features, 
-                       #returns a Pandas datframe similar to .corr()
+"""
+ cramer's v corr comparison between all categorical features
+ returns a Pandas datframe similar to .corr()
 
-cramers.corr(data, plot_htmp=True) #plots correlation heatmap using plotly
+"""
+cramers.corr(data)
 
-cramers.corr(data)[#feature_name] #single out a categorical feature and observe correlations, returns Pandas Series
+"""
+plots correlaton heatmap using plotly
+"""
 
+cramers.corr(data, plot_htmp=True)
+
+"""
+single out a categorical feature and observe correlations, returns Pandas Series
+"""
+cramers.corr(data)[#feature_name] 
 ```
 
 
@@ -70,8 +80,10 @@ cramers.corr(data)[#feature_name] #single out a categorical feature and observe 
 ```python
 cramers.corr(data, add_cols=['feature_name'])
 
-# added column should be present in the dataset provided
-# kindly use .astype('str') to force-convert falsely identified continuous columns (if any) before using.
+"""
+ added column should be present in the dataset provided
+ kindly use .astype('str') to force-convert falsely identified continuous columns (if any) before using.
+"""
 ```
 
 
@@ -87,7 +99,12 @@ cramers.corr(data, rem_cols=['feature_name'])
 <h3> If you want to use the wrapper for single-shot cramer's v correlation on two python arrays or two separate pandas dataframe column-objects:</h3>
 
 ```python
-cramers.cramers_v(data['feature_name1'], data['feature_name2']) #single-shot, doesn't remap after applying the operation on the dataframe
+"""
+single-shot operation, does not remap
+after applying operatio on the entire dataframe
+"""
+cramers.cramers_v(data['feature_name1'], data['feature_name2'])
+
 cramers.cramers_v([i for i in some classes1], [i for i in some classes2]) #say, we have two python arrays/lists instead
 ```
 
