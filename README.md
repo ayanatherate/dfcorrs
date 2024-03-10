@@ -84,6 +84,13 @@ cramers.corr(data, rem_cols=['feature_name'])
 
 ```
 
+<h3> If you want to use the wrapper for single-shot cramer's v correlation on two python arrays or two separate pandas dataframe column-objects:</h3>
+
+```python
+cramers.cramers_v(data['feature_name1'], data['feature_name2']) #single-shot, doesn't remap after applying the operation on the dataframe
+cramers.cramers_v([i for i in some classes1], [i for i in some classes2]) #say, we have two python arrays/lists instead
+```
+
 
 
 
